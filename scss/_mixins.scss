@@ -8,3 +8,16 @@
   width: $size;
   aspect-ratio: 1;
 }
+
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}

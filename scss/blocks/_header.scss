@@ -1,0 +1,51 @@
+.header {
+  &__inner {
+    @include flex-sb;
+
+    padding-top: 72px;
+
+    @include tablet {
+      padding-top: 56px;
+    }
+
+    @include mobile {
+      padding-top: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    font-size: 18px;
+
+    @include tablet {
+      column-gap: 30px;
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    @include hover {
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      width: 100px;
+      height: auto;
+    }
+
+    @include mobile {
+      width: 91px;
+      height: auto;
+    }
+  }
+}

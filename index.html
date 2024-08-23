@@ -8,6 +8,62 @@
     <title>Agency Creative</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="#" class="header__logo logo">
+                <img src="./images/logo.svg" alt="" width="136" height="50" loading="lazy" class="logo__image">
+            </a>
 
+            <nav class="header__nav hidden-mobile">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__link">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">About</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Services</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__button button hidden-mobile button--transparent" type="button">
+                Contact us
+            </button>
+
+            <button class="header__burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Burger Menu</span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <dialog class="mobile-overlay visible-mobile" id = "mobileOverlay">
+        <form class="mobile-overlay__close" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit"></button>
+            <span class="visually-hidden">Close Burger Menu</span>
+        </form>
+
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Home</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">About</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Services</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
 </body>
 </html>
