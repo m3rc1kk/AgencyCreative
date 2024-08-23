@@ -9,7 +9,7 @@
   border-radius: var(--border-radius-button);
 
   @include hover {
-    box-shadow: 0 0 10px var(--color-light);
+    box-shadow: var(--shadow);
   }
 
   &--transparent {

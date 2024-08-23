@@ -2,8 +2,7 @@
   --color-dark: #0E0E0E;
   --color-dark-alt: #0D0D0D;
   --color-light: #E2E2E2;
-  --color-yellow: #F9C651;
-  --color-yellow-alt: #FFB21A;
+  --color-yellow: #FFB21A;
   --color-green: #8EEA77;
   --color-red: #FF4646;
   --color-blue: #0B0F15;
@@ -17,10 +16,13 @@
 
   --border: 1px solid var(--color-light);
 
+  --shadow: 0 2px 5px #377DFF;
+
   --container-width: 1240px;
   --container-padding-x: 24px;
 
   --section-padding-y: 75px;
+  --section-padding-y-mobile: 40px;
 
   --font-family-base: 'Quicksand', sans-serif;
   --font-family-add: 'Nunito', sans-serif;
