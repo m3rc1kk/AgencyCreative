@@ -9,6 +9,14 @@
 
   }
 
+  &__title {
+    padding-block: 10px 48px;
+
+    @include mobile {
+      padding-block: 10px 35px;
+    }
+  }
+
   &__image {
     border-radius: var(--border-radius-default);
 
@@ -36,7 +44,6 @@
   }
 
   &__text, &__subtext {
-    opacity: .7;
 
     @include desktop {
       font-size: 16px;
@@ -44,12 +51,16 @@
 
     @include mobile {
       font-size: 14px;
-      text-align: center;
+      text-align: start;
     }
   }
 
   &__subtext {
     padding-bottom: 25px;
+
+    @include mobile {
+      padding-bottom: 35px;
+    }
   }
 
   &__button {
