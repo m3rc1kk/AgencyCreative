@@ -29,6 +29,10 @@
     font-weight: 800;
     max-width: 750px;
 
+    @include tablet {
+      font-size: 48px;
+    }
+
     @include mobile {
       font-size: 28px;
     }
@@ -40,9 +44,13 @@
     opacity: .7;
     padding-block: 24px 32px;
 
+    @include tablet {
+      font-size: 16px;
+      padding-block: 20px;
+    }
+
     @include mobile {
       font-size: 14px;
-      padding-block: 20px;
     }
   }
 

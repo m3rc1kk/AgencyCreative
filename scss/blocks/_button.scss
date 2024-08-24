@@ -6,7 +6,7 @@
   color: var(--color-dark);
   background-color: var(--color-light);
   border: 0;
-  border-radius: var(--border-radius-button);
+  border-radius: var(--border-radius-default);
 
   @include hover {
     box-shadow: var(--shadow);
