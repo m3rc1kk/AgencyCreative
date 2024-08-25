@@ -1,0 +1,119 @@
+.portfolio {
+
+  text-align: center;
+
+  &__description {
+    padding-bottom: 50px;
+  }
+
+  &__list {
+    @include flex-sb;
+
+    padding-bottom: 34px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 54px;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+  }
+
+  &__image {
+    border-radius: var(--border-radius-medium);
+
+    @include hover {
+      width: 360px;
+      height: 360px;
+      transition-duration: .2s;
+    }
+
+    @include desktop {
+      width: 300px;
+      height: 300px;
+
+      @include hover {
+        width: 310px;
+        height: 310px;
+      }
+    }
+
+    @include tablet {
+      width: 220px;
+      height: 220px;
+
+      @include hover {
+        width: 230px;
+        height: 230px;
+      }
+    }
+
+    @include mobile {
+      width: 300px;
+      height: 300px;
+
+      @include hover {
+        width: 305px;
+        height: 305px;
+      }
+    }
+
+    &--active {
+      width: 400px;
+      height: 400px;
+
+      @include hover {
+        width: 410px;
+        height: 410px;
+        transition-duration: .2s;
+      }
+
+      @include desktop {
+        width: 330px;
+        height: 330px;
+
+        @include hover {
+          width: 340px;
+          height: 340px;
+        }
+      }
+
+      @include tablet {
+        width: 250px;
+        height: 250px;
+
+        @include hover {
+          width: 260px;
+          height: 260px;
+        }
+      }
+
+      @include mobile {
+        width: 340px;
+        height: 340px;
+
+        @include hover {
+          width: 345px;
+          height: 345px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 30px;
+    left: 24px;
+  }
+
+  &__button {
+    @include mobile {
+      padding-inline: 35px;
+      padding-block: 10px;
+    }
+  }
+
+}
