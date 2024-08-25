@@ -17,6 +17,7 @@
   --border: 1px solid var(--color-light);
   --border-transparent: 1px solid rgba(255, 255, 255, 0.1);
   --shadow: 0 2px 5px var(--color-blue-light);
+  --shadow-light: 0 2px 5px rgba(255, 255, 255, 0.1);
   --container-width: 1240px;
   --container-padding-x: 24px;
   --section-padding-y: 75px;
@@ -1307,6 +1308,105 @@ h3 {
   .portfolio__button {
     padding-inline: 35px;
     padding-block: 10px;
+  }
+}
+
+.testimonial__title {
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .testimonial__title {
+    padding-bottom: 35px;
+  }
+}
+.testimonial__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 25px;
+}
+.testimonial__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  background-color: var(--color-blue);
+  padding: 50px 31px 105px 40px;
+  border-radius: var(--border-radius-small);
+}
+@media (max-width: 767px) {
+  .testimonial__item {
+    display: none;
+  }
+}
+@media (hover: hover) {
+  .testimonial__item:hover {
+    box-shadow: var(--shadow-light);
+    transition-duration: 0.2s;
+  }
+}
+@media (hover: none) {
+  .testimonial__item:active {
+    box-shadow: var(--shadow-light);
+    transition-duration: 0.2s;
+  }
+}
+@media (max-width: 1023px) {
+  .testimonial__item {
+    padding: 30px 21px 85px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial__item--active {
+    display: flex;
+    padding: 40px 20px 40px 40px;
+  }
+}
+.testimonial__author-info {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+@media (max-width: 1023px) {
+  .testimonial__author {
+    column-gap: 15px;
+  }
+}
+@media (max-width: 1023px) {
+  .testimonial__author-image {
+    width: 50px;
+    height: auto;
+  }
+}
+.testimonial__author-job, .testimonial__author-name {
+  font-style: normal;
+}
+.testimonial__author-job {
+  font-size: 14px;
+  opacity: 0.5;
+}
+@media (max-width: 1023px) {
+  .testimonial__author-job {
+    font-size: 12px;
+  }
+}
+.testimonial__author-name {
+  font-weight: 600;
+}
+@media (max-width: 1023px) {
+  .testimonial__author-name {
+    font-size: 18px;
+  }
+}
+.testimonial__quote {
+  opacity: 0.8;
+}
+@media (max-width: 1023px) {
+  .testimonial__quote {
+    font-size: 16px;
   }
 }
 

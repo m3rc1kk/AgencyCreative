@@ -1,0 +1,99 @@
+.testimonial {
+
+  &__title {
+    padding-bottom: 50px;
+
+    @include mobile {
+      padding-bottom: 35px;
+    }
+  }
+
+  &__list {
+    @include flex-sb;
+
+    column-gap: 25px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    background-color: var(--color-blue);
+    padding: 50px 31px 105px 40px;
+    border-radius: var(--border-radius-small);
+
+    @include mobile {
+      display: none;
+    }
+
+
+    @include hover {
+      box-shadow: var(--shadow-light);
+      transition-duration: .2s;
+    }
+
+    @include tablet {
+      padding: 30px 21px 85px 30px;
+    }
+
+    &--active {
+      @include mobile {
+        display: flex;
+        padding: 40px 20px 40px 40px;
+      }
+    }
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    @include tablet {
+      column-gap: 15px;
+    }
+
+    &-image {
+      @include tablet {
+        width: 50px;
+        height: auto;
+      }
+    }
+
+    &-job, &-name {
+      font-style: normal;
+    }
+
+    &-job {
+      font-size: 14px;
+      opacity: .5;
+
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+
+    &-name {
+      font-weight: 600;
+
+      @include tablet {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__quote {
+    opacity: .8;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+
+}
