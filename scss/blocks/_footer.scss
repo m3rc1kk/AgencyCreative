@@ -1,0 +1,146 @@
+.footer {
+
+  background-color: var(--color-gray);
+
+  &__inner {
+    padding-block: 132px 33px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+    align-items: center;
+  }
+
+  &__up {
+    display: flex;
+    align-items: start;
+    column-gap: 68px;
+
+    @include desktop {
+      column-gap: 30px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 80px;
+    }
+  }
+
+  &__logo {
+    padding: 16px 26px;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-small);
+
+  }
+
+  &__title {
+    padding-bottom: 24px;
+
+    @include tablet {
+      font-size: 16px;
+      padding-bottom: 16px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include tablet {
+      row-gap: 16px;
+    }
+
+  }
+
+  &__links {
+    @include flex-sb;
+
+    align-items: start;
+    column-gap: 77px;
+
+    @include desktop {
+      column-gap: 35px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 45px;
+    }
+
+  }
+
+  &__link {
+    @include hover {
+      opacity: .7;
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__social {
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+
+      @include mobile {
+        column-gap: 32px;
+      }
+    }
+
+    &-icon {
+      padding: 8px;
+      background-color: var(--color-light);
+      border-radius: 50%;
+    }
+
+    &-link {
+      @include hover {
+        opacity: .7;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+
+  }
+
+  &__right {
+    font-size: 18px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 500px;
+      height: 1px;
+      background-color: var(--color-light);
+      position: absolute;
+      bottom: 38px;
+      left: -25px;
+
+      @include mobile {
+        width: 370px;
+        left: -36px;
+        bottom: 36px;
+      }
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}

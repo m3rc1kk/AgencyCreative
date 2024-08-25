@@ -19,6 +19,10 @@ a {
   color: inherit;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-family-add);
+}
+
 h1 {
   font-size: 64px;
 }
@@ -29,4 +33,8 @@ h2 {
 
 h3 {
   font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
 }
